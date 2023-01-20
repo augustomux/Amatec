@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Site</title>
+    <head> 
+      <title>Sobre</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    </head>
+  </head>
+  <body>
+    <header>
+     
+      <div class="parent">
+
+        <div class="sidebar">
+          <div class="sidebar-pos">
+              <div class="img-sidebar">
+                <img src="gui.png" />
+              </div><!--img-->
+  
+              <div class="menu">
+                <a href="index.html">Sobre</a>
+                <a href="pagina2.html">Experiência</a>
+                <a class="selected" href="pagina3.html">Serviços</a>
+              </div><!--menu-->
+          </div><!--sidebar-pos-->
+  
+        </div><!--sidebar-->
+        <div class="parent">
+
+          <div class="sidebar">
+            <div class="sidebar-pos">
+                <div class="img-sidebar">
+                  <img src="imagens/gui.png" />
+                </div><!--img-->
+    
+                <div class="menu">
+                  <a href="index.html">Sobre</a>
+                  <a href="pagina2.html">Experiência</a>
+                  <a class="selected" href="pagina3.html">Serviços</a>
+                </div><!--menu-->
+            </div><!--sidebar-pos-->
+    
+          </div><!--sidebar-->
+<center>
+        
+    <div class="content">
+      <section class="descricao">
+        <h2><span>Serviços</span></h2>
+    
+          <div class="container">
+            <p>Se você está procurando por um site profissional, personalizado e otimizado, você veio ao lugar certo. Desenvolvedor sites á 4 anos de experiência, eu posso ajudá-lo a criar um site que atenda às suas necessidades e objetivos de negócios.</p>
+            <div class="services">
+              <div class="service">
+                <img src="Imagens/Image.jpg" alt="Loja Virtual">
+                <h2>Loja Virtual</h2>
+                <p>Criamos sites de comércio eletrônico personalizados que ajudarão a aumentar suas vendas.</p>
+              </div>
+              <div class="service">
+                <img src="Imagens/Image.jpg" alt="Blog">
+                <h2>Blog</h2>
+                <p>Criamos blogs profissionais que ajudam a aumentar o tráfego e a construir sua marca.</p>
+              </div>
+              <div class="service">
+                <img src="Imagens/Image.jpg" alt="Portfólio">
+                <h2>Portfólio</h2>
+                <p>Criamos portfólios online para mostrar o seu trabalho e atrair novos clientes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="elemento">
+          <form>
+            <h3>Informações sobre o site</h3>
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="url">URL do site:</label>
+            <input type="text" id="url" name="url"><br><br>
+
+            <label for="plataforma">Plataforma utilizada:</label>
+            <input type="text" id="plataforma" name="plataforma"><br><br>
+
+             <label for="telefone">Whatsapp:</label>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+
+            <label for="descrição">Descrição do site:</label>
+            <textarea id="descrição" name="descrição"></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+            <form action="submit-form.php" method="post">
+            <form id="myForm" action="sendemail.php" method="post">
+
+
+          </form>
+        </div>
+        <button class="fancy-button">
+        <div class="icons-social">
+          <a href="https://www.facebook.com/augusto.muxfeldtandre"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/augustomux/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCv9mFlOVUtI6CR2gFUTZwag"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/message/YTQWNYY3QKVZJ1"><i class="fab fa-whatsapp"></i></a>
+        </div><!--icons-social-->
+        </button>
+    </center>   
+  </header> 
+  <style>
+    .bubbles {
+      width: 100%;
+    height: 50%;
+    right: 90%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .bubble {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #87CEEB;
+      position: absolute;
+      animation: animateBubbles 6s ease-in-out infinite;
+    }
+    
+    @keyframes animateBubbles {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+    </style>
+    
+    
+    <div class="bubbles">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      
+      
+    </div>
+    
+    <script>
+    var bubbles = document.querySelector('.bubbles');
+    var bubble = document.querySelectorAll('.bubble');
+    
+    for (var i = 0; i < bubble.length; i++) {
+      var random = Math.floor(Math.random() * 90) + 1;
+      bubble[i].style.left = random + '%';
+      bubble[i].style.animationDelay = Math.floor(Math.random() * 5) + 's';
+    }
+    </script>
+  </body>
+</html>
